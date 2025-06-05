@@ -33,18 +33,51 @@ This repository is a collection of modular scripts for Linux and Windows automat
 
 ---
 
-🏁 Quick Start Guide
+## 🏁 Quick Start Guide
 
-Clone this repository:
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>/Scripts
-Navigate to your language subfolder:
-cd Bash       # Bash/Shell scripts
-cd PowerShell # PowerShell scripts
-cd Python       # Python scripts
-cd Ansible      # Ansible playbooks
-cd Terraform   # Terraform modules
-Review and prepare the script:
-Open in your preferred editor (nano, vim, code, etc.).
-Read comments and update variables if needed.
+1. **Clone this repository:**
+    ```sh
+    git clone https://github.com/hanshoyos/Lab-Scripts.git
+    cd Lab-Scripts/Scripts
+    ```
 
+2. **Navigate to a script subfolder:**
+    ```sh
+    cd Bash        # Bash/Shell scripts
+    cd PowerShell  # PowerShell scripts
+    cd Python      # Python scripts
+    cd Ansible     # Ansible playbooks
+    cd Terraform   # Terraform modules
+    ```
+
+3. **Open and review scripts in your preferred editor.**
+
+4. **To run a script:**
+    - **Bash/Python:**  
+      Make executable if needed, then run (use `sudo` if required):
+      ```sh
+      chmod +x scriptname.sh
+      sudo ./scriptname.sh
+      ```
+    - **PowerShell:**
+      ```powershell
+      pwsh -File .\scriptname.ps1
+      ```
+    - **Ansible:**
+      ```sh
+      ansible-playbook playbook.yml -i inventory_file
+      ```
+    - **Terraform:**
+      ```sh
+      terraform init
+      terraform plan
+      terraform apply
+      ```
+
+5. **After running,** review any output, log files, or summary notes for results and next steps.
+
+---
+
+> **Always review scripts before running and use at your own risk!**
+
+---
