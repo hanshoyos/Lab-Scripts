@@ -32,3 +32,19 @@ This repository is a collection of modular scripts for Linux and Windows automat
 > Contributions are welcome—just keep safety, clarity, and documentation in mind!
 
 ---
+
+🏁 Quick Start Guide
+
+Clone this repository:
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>/Scripts
+Navigate to your language subfolder:
+cd Bash       # Bash/Shell scripts
+cd PowerShell # PowerShell scripts
+cd Python       # Python scripts
+cd Ansible      # Ansible playbooks
+cd Terraform   # Terraform modules
+Review and prepare the script:
+Open in your preferred editor (nano, vim, code, etc.).
+Read comments and update variables if needed.
+
