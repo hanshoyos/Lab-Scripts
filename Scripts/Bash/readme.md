@@ -33,6 +33,21 @@ Performs a pre-deployment audit of a Linux system intended to host Apache Guacam
 - Lists open ports and UFW firewall state
 - Logs all findings to `/var/log/guac_env_audit.log`
 
+### `init_git_repo_push.sh`
+Bootstraps and pushes content to a GitHub repository using the command line:
+
+- Prompts for:
+  - GitHub username
+  - Personal Access Token (hidden)
+  - Repo name and branch name
+  - Git commit name/email for attribution
+- Clones a GitHub repo (public or private)
+- Creates a `README.md` and `.placeholder` file (can be replaced)
+- Commits and pushes to the specified branch
+- Safe to rerun and adaptable for any repo bootstrapping
+- Logs activity to `~/git_repo_init.log`
+
+
 ---
 
 ## 🔧 Usage Notes
